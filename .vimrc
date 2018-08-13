@@ -105,7 +105,6 @@ let g:ycm_min_num_of_chars_for_completion=1
 
 "let g:clang_format#auto_format_on_insert_leave=1
 
-
 let g:ycm_global_ycm_extra_conf='~/.vim/plugged/YouCompleteMe/thrid_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 let g:AutoPairs = {'(':')', '[':']', '{':'}',"'":"'",'"':'"'}
 let g:protodefprotogetter='~/.vim/plugged/vim-protodef/pullproto.pl'

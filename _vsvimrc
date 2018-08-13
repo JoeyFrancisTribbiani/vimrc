@@ -1,0 +1,41 @@
+"重要配置
+set backspace=indent,eol,start "退格键设置"
+set clipboard=unnamed   "默认的剪切寄存器"
+set ignorecase  "忽略大小写"
+let mapleader=";"
+
+
+"vs窗口和视图
+:nnoremap cv :vsc View.SolutionExplorer<CR> "打开解决方案资源管理器
+:nnoremap <Leader>of :vsc File.OpenContainingFolder<cr>	"打开所在的文件夹
+:nnoremap zs :vsc View.FindSymbolResults<CR>	"打开查找符号结果
+
+:nnoremap <S-j> <Esc>:tabprevious<CR>"标签页跳转 - 上一标签
+:nnoremap <S-k> <Esc>:tabnext<CR>"标签页跳转 - 下一标签
+
+:nnoremap <c-o> :vsc View.NavigateBackward<cr>"后退
+:nnoremap <c-i> :vsc View.NavigateForward<cr>"前进
+
+"vs编辑框
+:nnoremap <Leader>lm :vsc VAssistX.ListMethodsInCurrentFile<cr> "函数列表
+:nnoremap <leader>ff :vsc Edit.FindinFiles<cr>	"在文件中查找"
+
+"对代码的操作
+:nnoremap <Leader>fr :vsc VAssistX.FindReferencesinFile<cr> "查找光标所在单词在当前文件中的引用
+:nnoremap <Leader>ar :vsc VAssistX.FindReferences<cr>	"查找所有引用
+
+:nnoremap <leader>qi :vsc Edit.QuickInfo<cr>	"查看函数定义文档
+:nnoremap <leader>ri :vsc VAssistX.RefactorImplementInterface<cr>	"实现接口
+:nnoremap zk :vsc Edit.ParameterInfo<CR> "快速查看方法的所有定义,鼠标在方法parameter上的时候显示的东西
+
+"添加注释
+"vv是为了退出visual line模式
+:vnoremap ci :vsc Edit.CommentSelection<cr>vv
+:vnoremap cu :vsc Edit.UncommentSelection<cr>vv
+:nnoremap ci :vsc Edit.CommentSelection<cr>vv
+:nnoremap cu :vsc Edit.UncommentSelection<cr>vv
+
+
+
+
+source C:\Users\yuanshuheng\_vsvimrc
