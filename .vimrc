@@ -27,6 +27,7 @@ Plug 'terryma/vim-smooth-scroll'
 Plug 'w0rp/ale'
 Plug 'Valloric/YouCompleteMe',{'for':'c'}
 Plug 'tpope/vim-commentary'
+Plug 'ianva/vim-youdao-translater'
 
 " c / cpp
 Plug 'derekwyatt/vim-fswitch',{'for':'c'}
