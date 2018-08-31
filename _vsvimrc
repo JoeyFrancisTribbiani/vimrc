@@ -16,6 +16,8 @@ let mapleader=";"
 :nnoremap <c-o> :vsc View.NavigateBackward<cr>"后退
 :nnoremap <c-i> :vsc View.NavigateForward<cr>"前进
 
+:nnoremap zz zt "移动到顶部
+
 "vs编辑框
 :nnoremap <Leader>lm :vsc VAssistX.ListMethodsInCurrentFile<cr> "函数列表
 :nnoremap <leader>ff :vsc Edit.FindinFiles<cr>	"在文件中查找"
