@@ -34,8 +34,3 @@ let mapleader=";"
 :vnoremap cu :vsc Edit.UncommentSelection<cr>vv
 :nnoremap ci :vsc Edit.CommentSelection<cr>vv
 :nnoremap cu :vsc Edit.UncommentSelection<cr>vv
-
-
-
-
-source C:\Users\yuanshuheng\_vsvimrc
