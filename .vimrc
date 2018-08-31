@@ -27,6 +27,7 @@ Plug 'terryma/vim-smooth-scroll'
 Plug 'w0rp/ale'
 Plug 'Valloric/YouCompleteMe',{'for':'c'}
 Plug 'tpope/vim-commentary'
+Plug 'ianva/vim-youdao-translater'
 
 " c / cpp
 Plug 'derekwyatt/vim-fswitch',{'for':'c'}
@@ -104,6 +105,7 @@ let g:ycm_confirm_extra_conf=0
 let g:ycm_min_num_of_chars_for_completion=1
 
 "let g:clang_format#auto_format_on_insert_leave=1
+
 
 let g:ycm_global_ycm_extra_conf='~/.vim/plugged/YouCompleteMe/thrid_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 let g:AutoPairs = {'(':')', '[':']', '{':'}',"'":"'",'"':'"'}
