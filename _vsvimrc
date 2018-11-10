@@ -1,37 +1,48 @@
-"ÖØÒªÅäÖÃ
-set backspace=indent,eol,start "ÍË¸ñ¼üÉèÖÃ"
-set clipboard=unnamed   "Ä¬ÈÏµÄ¼ôÇĞ¼Ä´æÆ÷"
-set ignorecase  "ºöÂÔ´óĞ¡Ğ´"
+"é‡è¦é…ç½®
+set backspace=indent,eol,start "é€€æ ¼é”®è®¾ç½®
+set clipboard=unnamed   "é»˜è®¤çš„å‰ªåˆ‡å¯„å­˜å™¨
+set ignorecase  "å¿½ç•¥å¤§å°å†™
 let mapleader=";"
 
 
-"vs´°¿ÚºÍÊÓÍ¼
-:nnoremap cv :vsc View.SolutionExplorer<CR> "´ò¿ª½â¾ö·½°¸×ÊÔ´¹ÜÀíÆ÷
-:nnoremap <Leader>of :vsc File.OpenContainingFolder<cr>	"´ò¿ªËùÔÚµÄÎÄ¼ş¼Ğ
-:nnoremap zs :vsc View.FindSymbolResults<CR>	"´ò¿ª²éÕÒ·ûºÅ½á¹û
+"vsçª—å£å’Œè§†å›¾
+:nnoremap <leader>sv :vsc View.SolutionExplorer<CR> "æ‰“å¼€è§£å†³æ–¹æ¡ˆèµ„æºç®¡ç†å™¨
+:nnoremap <Leader>of :vsc File.OpenContainingFolder<cr>	"æ‰“å¼€æ‰€åœ¨çš„æ–‡ä»¶å¤¹
+:nnoremap zs :vsc View.FindSymbolResults<CR>	"æ‰“å¼€æŸ¥æ‰¾ç¬¦å·ç»“æœ
+:nnoremap cv :vsc View.ClassView<cr>	"æ‰“å¼€ç±»è§†å›¾
+:nnoremap <leader>cv :vsc View.ClassViewSearch<cr> "ç±»è§†å›¾ä¸­æœç´¢
+:nnoremap <leader>p :vsc Window.NextPane<cr>	"æ‰“å¼€ä¸‹ä¸€ä¸ªçª—æ ¼
 
-:nnoremap <S-j> <Esc>:tabprevious<CR>"±êÇ©Ò³Ìø×ª - ÉÏÒ»±êÇ©
-:nnoremap <S-k> <Esc>:tabnext<CR>"±êÇ©Ò³Ìø×ª - ÏÂÒ»±êÇ©
+:nnoremap <S-j> <Esc>:tabprevious<CR>"æ ‡ç­¾é¡µè·³è½¬ - ä¸Šä¸€æ ‡ç­¾
+:nnoremap <S-k> <Esc>:tabnext<CR>"æ ‡ç­¾é¡µè·³è½¬ - ä¸‹ä¸€æ ‡ç­¾
 
-:nnoremap <c-o> :vsc View.NavigateBackward<cr>"ºóÍË
-:nnoremap <c-i> :vsc View.NavigateForward<cr>"Ç°½ø
+:nnoremap <c-o> :vsc View.NavigateBackward<cr>"åé€€
+:nnoremap <c-i> :vsc View.NavigateForward<cr>"å‰è¿›
 
-:nnoremap zz zt "ÒÆ¶¯µ½¶¥²¿
+:nnoremap zz zt "ç§»åŠ¨åˆ°é¡¶éƒ¨
 
-"vs±à¼­¿ò
-:nnoremap <Leader>lm :vsc VAssistX.ListMethodsInCurrentFile<cr> "º¯ÊıÁĞ±í
-:nnoremap <leader>ff :vsc Edit.FindinFiles<cr>	"ÔÚÎÄ¼şÖĞ²éÕÒ"
+"vsç¼–è¾‘æ¡†
+:nnoremap <Leader>lm :vsc VAssistX.ListMethodsInCurrentFile<cr> "å‡½æ•°åˆ—è¡¨
+:nnoremap <leader>ff :vsc Edit.FindinFiles<cr>	"åœ¨æ–‡ä»¶ä¸­æŸ¥æ‰¾
+:nnoremap <space> <c-d>	"ç¿»å±
 
-"¶Ô´úÂëµÄ²Ù×÷
-:nnoremap <Leader>fr :vsc VAssistX.FindReferencesinFile<cr> "²éÕÒ¹â±êËùÔÚµ¥´ÊÔÚµ±Ç°ÎÄ¼şÖĞµÄÒıÓÃ
-:nnoremap <Leader>ar :vsc VAssistX.FindReferences<cr>	"²éÕÒËùÓĞÒıÓÃ
+"å¯¹ä»£ç çš„æ“ä½œ
+:nnoremap <Leader>fr :vsc VAssistX.FindReferencesinFile<cr> "æŸ¥æ‰¾å…‰æ ‡æ‰€åœ¨å•è¯åœ¨å½“å‰æ–‡ä»¶ä¸­çš„å¼•ç”¨
+:nnoremap <Leader>ar :vsc VAssistX.FindReferences<cr>	"æŸ¥æ‰¾æ‰€æœ‰å¼•ç”¨
+:nnoremap == 10000== "æ ¼å¼åŒ–æ–‡æ¡£
 
-:nnoremap <leader>qi :vsc Edit.QuickInfo<cr>	"²é¿´º¯Êı¶¨ÒåÎÄµµ
-:nnoremap <leader>ri :vsc VAssistX.RefactorImplementInterface<cr>	"ÊµÏÖ½Ó¿Ú
-:nnoremap zk :vsc Edit.ParameterInfo<CR> "¿ìËÙ²é¿´·½·¨µÄËùÓĞ¶¨Òå,Êó±êÔÚ·½·¨parameterÉÏµÄÊ±ºòÏÔÊ¾µÄ¶«Î÷
+:nnoremap <leader>qi :vsc Edit.QuickInfo<cr>	"æŸ¥çœ‹å‡½æ•°å®šä¹‰æ–‡æ¡£
+:nnoremap <leader>ri :vsc VAssistX.RefactorImplementInterface<cr>	"å®ç°æ¥å£
+:nnoremap zk :vsc Edit.ParameterInfo<CR> "å¿«é€ŸæŸ¥çœ‹æ–¹æ³•çš„æ‰€æœ‰å®šä¹‰,é¼ æ ‡åœ¨æ–¹æ³•parameterä¸Šçš„æ—¶å€™æ˜¾ç¤ºçš„ä¸œè¥¿
 
-"Ìí¼Ó×¢ÊÍ
-"vvÊÇÎªÁËÍË³övisual lineÄ£Ê½
+:nnoremap <Leader>ar :vsc Edit.FindAllReferences<cr>	"æŸ¥æ‰¾æ‰€æœ‰
+:nnoremap <leader>qi :vsc Edit.QuickInfo<cr>	
+:nnoremap <leader>ls :vsc Window.MovetoNavigationBar<cr>	 "å¯¼èˆªçª—æ ¼
+":nnoremap <leader>ll <c-F2>	 
+:nnoremap zk :vsc Edit.ParameterInfo<CR> 
+:nnoremap <leader>ne :vsc View.NextError<cr>	 
+"æ·»åŠ æ³¨é‡Š
+"vvæ˜¯ä¸ºäº†é€€å‡ºvisual lineæ¨¡å¼
 :vnoremap ci :vsc Edit.CommentSelection<cr>vv
 :vnoremap cu :vsc Edit.UncommentSelection<cr>vv
 :nnoremap ci :vsc Edit.CommentSelection<cr>vv
